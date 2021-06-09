@@ -1,0 +1,14 @@
+<% flash.each do |type, message| %>
+<div class="ui <%= type %> message transition">
+    <i class="close icon"></i>
+    <% if message.class == Array %>
+    <ul class="list">
+        <% message.each do |msg|%>
+        <li class="header"><%= msg %></li>
+        <% end %>
+    </ul>
+    <% else %>
+    <p class="header"><%= message %></p>
+    <% end %>
+</div>
+<% end %>

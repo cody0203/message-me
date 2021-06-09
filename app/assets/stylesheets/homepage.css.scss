@@ -1,0 +1,24 @@
+.chatbox,
+.online-user-box {
+  height: 450px;
+}
+
+.online-user-box {
+  .ui.vertical.menu {
+    width: auto;
+  }
+}
+
+#messages {
+  height: 15em;
+  overflow: auto;
+}
+
+#user-list {
+  height: 15em;
+}
+
+#user-container {
+  height: 100%;
+  overflow: auto;
+}

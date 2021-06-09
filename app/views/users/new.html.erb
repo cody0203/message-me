@@ -1,0 +1,28 @@
+<h2 class="ui center aligned header">Welcome to Message Me</h2>
+<h3 class="ui center aligned icon header">
+    <i class="circular orange power off icon"></i>
+    Signup
+</h3>
+<div class="ui placeholder segment">
+    <div class="ui column very relaxed stackable grid">
+        <div class="column">
+            <%= form_with(scope: :user, url: signup_path, html: {class: "ui form"}) do |form| %>
+            <div class="field">
+                <%= form.label :username, "Username" %>
+                <div class="ui left icon input">
+                    <%= form.text_field :username, placeholder: "Enter your username" %>
+                    <i class="user icon"></i>
+                </div>
+            </div>
+            <div class="field">
+                <%= form.label :password, "Password" %>
+                <div class="ui left icon input">
+                    <%= form.text_field :password, placeholder: "Enter your password", type: 'password' %>
+                    <i class="lock icon"></i>
+                </div>
+            </div>
+            <%= form.submit "Signup", class: "ui orange submit button" %>
+            <% end %>
+        </div>
+    </div>
+</div>
